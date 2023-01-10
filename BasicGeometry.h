@@ -261,10 +261,4 @@ bool segmentIntersect(const point2D& a, const point2D& b, const point2D& c, cons
 	return (sign(cross(c - b, c - a)) != sign(cross(d - b, d - a))  && sign(cross(a - c, a - d)) != sign(cross(b - c, b - d)));
 	
 }
-int main()
-{
-	point2D a(15, 3), b(24, 12);
-	point2D c(8, 15), d(20, 9);
-	std::cout << segmentIntersect(a, b, c, d);
-	return 0;
-}
+
